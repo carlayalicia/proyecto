@@ -1,0 +1,160 @@
+<!--horario con estilos mediante estilos CSS econ la etiqueta style -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Horario Carla y Alicia </title>
+		<meta  charset="UTF-8">
+		<link rel="stylesheet" href="estilo3.css" type="text/css"/>
+		<script src="javaScript.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	</head>
+		
+	<script type="text/javascript"> //programa HOLA! 
+	window.setInterval (BlinkIt, 500);
+	var color = "red";
+	function BlinkIt () {
+		var blink = document.getElementById ("blink");
+		color = (color == "#ffffff")? "red" : "#ffffff";
+		blink.style.color = color;
+		blink.style.fontSize='36px';
+		}
+	</script>
+	<div id="blink">Hola!</div>
+
+	<body>
+	<h1> ESTACIÓN </h1>
+		<body onload="f20()">
+		<img src="verano.jpg" id="img"/>
+		</body>
+		
+	<h1 > HORARIO 2ºBACH B</h1>
+		<table style="margin:  auto">
+			<tr class="dias">
+				<td>Lunes</td>
+				<td>Martes </td>
+				<td>Miercoles </td>
+				<td>Jueves</td>
+				<td>Viernes</td>
+			</tr>
+			<tr>
+				<td class="Fsc" onclick="cambiar('t1')">Fisica		 <span id="t1">[x]</span></td>
+				<td class="Mate"onclick="cambiar('t2')">Matemáticas <span id="t2">[x]</span></td>
+				<td class="Lng" onclick="cambiar('t3')">Lengua		 <span id="t3">[x]</span></td>
+				<td class="Mate"onclick="cambiar('t4')">Matemáticas  <span id="t4">[x]</span></td>
+				<td class="TI"  onclick="cambiar('t5')">TI			 <span id="t5">[x]</span></td>
+			</tr>
+			<tr>
+				<td class="TI"  onclick="cambiar('t6')">TI			 <span id="t6">[x]</span></td>
+				<td class="Ing" onclick="cambiar('t7')">Ing			 <span id="t7">[x]</span></td>
+				<td class="TI"  onclick="cambiar('t8')">TI			 <span id="t8">[x]</span></td>
+				<td class="Dib" onclick="cambiar('t9')">Dibujo		 <span id="t9">[x]</span></td>
+				<td class="Ing" onclick="cambiar('t10')">Ing		 <span id="t10">[x]</span></td>
+			</tr>
+			<tr>
+				<td class="Mate"onclick="cambiar('t11')">Matemáticas <span id="t11">[x]</span></td>
+				<td class="Dib" onclick="cambiar('t12')"> Dibujo	 <span id="t12">[x]</span></td>
+				<td class="Dib" onclick="cambiar('t13')"> Dibujo	 <span id="t13">[x]</span></td>
+				<td class="TI"  onclick="cambiar('t14')">TI			 <span id="t14">[x]</span></td>
+				<td class="Fsc" onclick="cambiar('t15')">Física		 <span id="t15">[x]</span></td>
+			</tr>
+			<tr height= 20>
+				<td  class="recreo" colspan ="5">Recreo</td>
+				</tr>
+			<tr>
+				<td class="Lng" onclick="cambiar('t16')">Lengua		 <span id="t16">[x]</span></td>
+				<td class="Fsc" onclick="cambiar('t17')">Física		 <span id="t17">[x]</span></td>
+				<td class="TIC" onclick="cambiar('t18')">TIC 		 <span id="t18">[x]</span></td>
+				<td class="TIC" onclick="cambiar('t19')">TIC		 <span id="t19">[x]</span></td>
+				<td class="Lng" onclick="cambiar('t20')">Lengua		 <span id="t20">[x]</span></td>
+			</tr>
+			
+			<tr>
+				<td class="Hst" onclick="cambiar('t21')">Historia	 <span id="t21">[x]</td>
+				<td class="Hst" onclick="cambiar('t22')">Historia	 <span id="t22">[x]</td>
+				<td class="Hst" onclick="cambiar('t23')">Historia	 <span id="t23">[x]</td>
+				<td class="Fsc" onclick="cambiar('t24')">Física		 <span id="t24">[x]</td>
+				<td class="TIC" onclick="cambiar('t25')">TIC		 <span id="t25">[x]</td>
+			</tr>
+			<tr>
+				<td class="Ing" onclick="cambiar('t26')">Ing		 <span id="t26">[x]</td>
+				<td class="Lng" onclick="cambiar('t27')">Lengua 	 <span id="t27">[x]</td>
+				<td class="Mate"onclick="cambiar('t28')">Matemáticas <span id="t28">[x]</td>
+				<td class="Hst" onclick="cambiar('t29')">Historia	 <span id="t29">[x]</td>
+				<td class="Dib" onclick="cambiar('t30')">Dibujo	     <span id="t30">[x]</td>
+			</tr>
+		</table>
+		
+		<br></br>
+		~~ <button onclick="f1()">Dia</button>
+		<br></br>
+		
+		<table style="margin:  auto">
+				<td>  <button onclick="f3()">TIC</button> </td>
+				<td>  <button onclick="f4()">TI</button> </td>
+				<td>  <button onclick="f5()">DIBUJO</button> </td>
+				<td>  <button onclick="f6()">HISTORIA</button> </td>
+				<td>  <button onclick="f7()">MATE</button> </td>
+				<td>  <button onclick="f8()">LENGUA</button> </td>
+				<td>  <button onclick="f9()">INGLÉS</button> </td>
+				<td>  <button onclick="f10()">FISICA</button> </td>
+			</table>
+			
+		
+			<h1>Notas asignaturas</h1>
+			
+		<hr>
+		<table style="margin:  auto">
+			<tr>
+				<td class="noBorder1">Mate:</td>
+				<td class="noBorder"><input type="number" id="nota1"></td>
+			</tr>
+			<tr>
+				<td class="noBorder1">Lengua:</td>
+				<td class="noBorder"><input type="number" id="nota2"></td>
+			</tr>
+			<tr>
+				<td class="noBorder1">Inglés:</td>
+				<td class="noBorder"><input type="number" id="nota3"></td>
+			</tr>
+			<tr>
+				<td class="noBorder1">Historia:</td>
+				<td class="noBorder"><input type="number" id="nota4"></td>
+			</tr>
+			<tr>
+				<td class="noBorder1">TI:</td>
+				<td class="noBorder"><input type="number" id="nota5"></td>
+			</tr>
+			<tr>
+				<td class="noBorder1">TIC:</td>
+				<td class="noBorder"><input type="number" id="nota6"></td>
+			</tr>
+			<tr>
+				<td class="noBorder1">Dibujo:</td>
+				<td class="noBorder"><input type="number" id="nota7"></td>
+			</tr>
+			<tr>
+				<td class="noBorder1">Física:</td>
+				<td class="noBorder"><input type="number" id="nota8"></td>
+			</tr>
+			<tr>
+				<td class="noBorder2" colspan="2">
+				<button onclick="media()">Calcular</button></td>
+			</tr>
+			<tr>
+				<td class="noBorder1">Nota media: </td>
+				<td class="noBorder"><span id="media"> </span></td>
+			</tr>
+			</hr>
+		</table>
+		
+		<h1> CREAMOS FLORES </h1>
+		
+		<body onload="f30()">
+			<button id="contenedor" onclick="f()"></button>
+		</body>
+		
+	</body>
+	
+		
+	
+</html>

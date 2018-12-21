@@ -1,0 +1,53 @@
+body{
+				text-align: center;
+				font-size: 12px;
+			}
+			table, tr, td{
+				padding: 5px;
+				border: 1px solid black;
+				border-radius: 15px;
+				font-size: 14px;				
+			}
+			.dias{
+				color:blue;	
+				background-color: lightGray;
+			}
+			.Fsc{
+				background-color: #F781F3;
+			}
+			.TIC{
+				background-color: #82FA58;
+			}
+			.TI{
+				background-color: #F3F781;
+			}
+			.Lng{
+				background-color:#A9F5F2;
+			}
+			.Ing{
+				background-color: #FE9A2E;
+			}
+			.Hst{
+				background-color: #AC58FA;
+			}
+			.Dib{
+				background-color: #01DFA5;
+			}
+			.recreo{
+				background-color: #BDBDBD;
+				font-size: 10px;
+			}
+		    .Mate{
+				background-color: #FE2E2E;
+			}
+			td{
+				cursor:pointer;
+			}
+			span{
+				font-weight:bold;
+			color:0F0303;
+			}
+			td:hover{
+				text-decoration:underline;
+			}
+		
